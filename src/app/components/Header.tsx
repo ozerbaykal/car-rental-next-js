@@ -3,7 +3,7 @@ import Container from "./Container";
 Container
 const Header = () => {
     return (
-        <header >
+        <header className="absolute w-full text-white" >
             <Container designs="flex justify-between items-center w-full ">
                 <h1 className="font-bold text-2xl md:text-3xl">
                     <Link href="/">DRIVE</Link>
