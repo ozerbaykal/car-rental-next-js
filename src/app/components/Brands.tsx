@@ -10,8 +10,8 @@ const Brands = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-5 mt-5 items-center ">
                 {
                     brands.map((item, key) => (
-                        <div className="bg-white shadow rounded-lg flex flex-col items-center p-3 cursor-pointer transition hover:shadow-lg">
-                            <Image key={key} src={item.icon} alt="brand-logo" />
+                        <div key={key} className="bg-white shadow rounded-lg flex flex-col items-center p-3 cursor-pointer transition hover:shadow-lg">
+                            <Image src={item.icon} alt="brand-logo" />
                             <h4 className="text-base">{item.name}</h4>
                         </div>
 
