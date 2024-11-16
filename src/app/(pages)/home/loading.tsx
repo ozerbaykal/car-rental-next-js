@@ -1,7 +1,9 @@
 
 const loading = () => {
     return (
-        <div>loading</div>
+        <div>
+            <h1 className="bg-red-400">Loading...</h1>
+        </div>
     )
 }
 

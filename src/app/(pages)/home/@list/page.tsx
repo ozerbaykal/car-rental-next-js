@@ -1,3 +1,4 @@
+import Card from "@/app/components/Card";
 import Container from "../../../components/Container";
 import { Car } from "@/app/types"
 
@@ -17,13 +18,14 @@ const getCars = async (): Promise<ReturnType> => {
         throw new Error("Araçları alarak bir sorun oluştu")
 
     }
-
-
-
-
+}
+function delay(ms: number) {
+    return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
 const List = async () => {
+    await delay(1000)
+
     const { data } = await getCars();
 
 
@@ -34,14 +36,8 @@ const List = async () => {
             <div>
                 {
                     data.map((car) => (
-                        <div>
-                            <h1>
-                                {car.make}
-                                {car.model}
+                        <Card key={car._id} car={car} />
 
-                            </h1>
-
-                        </div>
                     ))
                 }
             </div>
