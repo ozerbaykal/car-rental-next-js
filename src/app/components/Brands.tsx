@@ -4,9 +4,9 @@ import Container from "./Container"
 
 const Brands = () => {
     return (
-        <Container designs="text-2xl md:text-3xl font-bold ">
+        <Container >
 
-            <h1>Premium Markalarımızı keşfedin</h1>
+            <h1 className="text-2xl md:text-3xl font-bold">Premium Markalarımızı keşfedin</h1>
             <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-5 mt-5 items-center ">
                 {
                     brands.map((item, key) => (
