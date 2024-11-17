@@ -1,3 +1,4 @@
+import Header from "@/app/components/Header";
 
 const Layout = ({ children, list }: {
     children: JSX.Element | JSX.Element[];
@@ -6,6 +7,8 @@ const Layout = ({ children, list }: {
 
     return (
         <div>
+            <Header designs="absolute text-white" />
+
             {children}
             {list}
         </div>
