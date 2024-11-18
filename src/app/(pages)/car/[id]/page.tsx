@@ -2,6 +2,8 @@ import Header from "@/app/components/Header"
 import BreadCrumb from "./BreadCrumb"
 import Container from "@/app/components/Container"
 import { Car } from "@/app/types"
+import Images from "./images"
+import Title from "./Title"
 
 type Props = {
     params: { id: string }
@@ -36,11 +38,11 @@ const Page = async ({ params }: Props) => {
         <div>
             <Header designs="bg-black text-white" />
             <Container designs="mt-5">
-                <div >
-                    <BreadCrumb car={data.vehicle} />
-                    <h1 className="my-10">ARAÇ DETAY</h1>
-                    <h1>{params.id}</h1>
-                </div>
+
+                <BreadCrumb car={data.vehicle} />
+                <Title car={data.vehicle} />
+                <Images url={data.vehicle.imageUrl} />
+
             </Container>
 
         </div>
