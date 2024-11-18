@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CarRental Frontend
 
-## Getting Started
+This is a **Car Rental** web application built using [Next.js](https://nextjs.org/). The application interacts with an external API (backend) to provide car rental services, allowing users to browse, filter, and rent cars.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Screenshots
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## screenrecord gif
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![](./public/images/recordcar.gif)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### home page
 
-## Learn More
+![](./public/images/homepage.png)
 
-To learn more about Next.js, take a look at the following resources:
+### home page 2
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![](./public/images/homepage-2.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### detail page
 
-## Deploy on Vercel
+![](./public/images/detailpage.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## success page
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![](./public/images/successpage.png)
+
+## cancel page
+
+![](./public/images/cancelpage.png)
+
+## Features
+
+- 🚗 **Car Listings**: Displays a list of available cars for rent.
+- 🌐 **API Integration**: Dynamically fetches data from an external API.
+- 🎨 **Responsive Design**: Fully responsive UI for mobile, tablet, and desktop.
+- 💡 **Optimized Performance**: Leveraging Next.js server-side rendering (SSR) and static site generation (SSG) for fast load times.
+
+---
+
+## Technologies Used
+
+- millify
+  A JavaScript library used to format large numbers into human-readable formats.
+  For example, it converts 1000000 into 1M.
+- mongoose
+  A library for MongoDB object modeling, designed to work with asynchronous environments in Node.js.
+  It simplifies database interaction and provides schema-based solutions for data modeling, validation, and querying.
+- Next.js
+  A React-based framework that offers server-side rendering (SSR) and static site generation (SSG) features.
+  It enables automatic routing, API routes, and optimizations, making it easier to develop modern web applications.
+- Stripe
+  A popular API for processing online payments.
+  Stripe provides powerful tools for handling payments, subscriptions, and other financial transactions in web and mobile applications.
+- Tailwind CSS
+  A utility-first CSS framework.
+  It provides a fast and flexible way to apply styles directly within HTML using utility classes, making it easy to create responsive and customized designs.
+  Tailwind simplifies the styling process by offering pre-configured utility classes for common design tasks.
+
+---
+
+## Installation & Setup
+
+### Prerequisites
+
+- Node.js (version 16 or above recommended)
+- npm or yarn
+
+## Installation
+
+1. Clone this repository to your local machine:
+   ```
+   git clone https://github.com/ozerbaykal/car-rental-next-js.git
+   ```
+2. ```
+   cd car-rental-next-js
+   ```
+3. ```
+   npm run dev
+   ```
+4. Open your browser and navigate to:
+   ```
+   http://localhost:3000/
+   ```
+
+## Contributing
+
+Contributions are welcome! Please open an issue first to discuss what you would like to change.
+
+- 1.Fork the project
+- 2.Create your feature branch (git checkout -b feature/NewFeature)
+- 3.Commit your changes (git commit -m 'Add new feature')
+- 4.Push to the branch (git push origin feature/NewFeature)
+- 5.Open a Pull Request
+
+<h2>Contact</h2>
+
+Özer BAYKAL mail : baykalozer87@gmail.com
+
+Project Link:https://github.com/ozerbaykal/car-rental-next-js
