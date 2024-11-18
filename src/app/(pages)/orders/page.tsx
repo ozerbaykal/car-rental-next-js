@@ -1,7 +1,10 @@
+import Header from "@/app/components/Header"
 
 const Page = () => {
     return (
-        <div>Page</div>
+        <div>
+            <Header designs="bg-black text-white" />
+        </div>
     )
 }
 

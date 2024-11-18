@@ -1,8 +1,9 @@
+import Loader from "@/app/components/Loader"
 
 const loading = () => {
     return (
-        <div>
-            <h1 className="bg-red-400">Loading...</h1>
+        <div className="my-10">
+            <Loader />
         </div>
     )
 }
