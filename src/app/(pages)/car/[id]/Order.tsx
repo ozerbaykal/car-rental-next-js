@@ -2,8 +2,11 @@ import Image from "next/image"
 import pp from "@/app/assets/pp.png"
 import loc from "@/app/assets/icons/loc.svg"
 import tel from "@/app/assets/icons/tel.svg"
+import OrderButton from "./OrderButton"
+import { Car } from "@/app/types"
 
-const OrderBox = () => {
+
+const OrderBox = ({ car }: { car: Car }) => {
     return (
         <div className="border shadow rounded-md p-5 max-xl:mt-10 w-full xl:col-span-2">
             <div className="flex gap-5">
@@ -32,7 +35,9 @@ const OrderBox = () => {
                 </div>
             </div>
 
-            <button className="bg-blue-500 w-full p-2 mt-3 rounded-lg text-white font-bold transition hover:bg-blue-600 ">Aracı Kirala</button>
+            <OrderButton car={car} />
+
+
             <button className="bg-green-500 w-full p-2 mt-3 rounded-lg text-white font-bold transition hover:bg-green-600 ">Whatsapp</button>
 
         </div>

@@ -5,7 +5,6 @@ import { Car } from "@/app/types"
 import Images from "./images"
 import Title from "./Title"
 import Overview from "./Overview"
-import Order from "./Order"
 import OrderBox from "./Order"
 
 type Props = {
@@ -34,7 +33,6 @@ const Page = async ({ params }: Props) => {
 
     const data = await getDetail(params.id)
 
-    console.log(data)
 
 
     return (
@@ -45,14 +43,14 @@ const Page = async ({ params }: Props) => {
                 <BreadCrumb car={data.vehicle} />
                 <Title car={data.vehicle} />
                 <Images url={data.vehicle.imageUrl} />
-                <div className="grid lg:grid-cols-5 gap-x-10 my-10">
+                <div className="grid lg:grid-cols-5 gap-x-10">
                     <div className="xl:col-span-3">
                         <Overview car={data.vehicle} />
 
 
                     </div>
 
-                    <OrderBox />
+                    <OrderBox car={data.vehicle} />
 
 
                 </div>

@@ -16,7 +16,7 @@ const Header = ({ designs }: { designs?: string }) => {
                     <Link className="max-md:hidden" href="/"> Fİyatlandırma</Link>
                 </nav>
 
-                <div className="flex gap-2">
+                <div className="flex gap-4">
                     <button className="max-md:hidden" >Contact</button>
                     <button className="bg-white text-black px-5 py-2 rounded-full text-nowrap transiton hover:bg-gray-100">Sign Up</button>
                 </div>
