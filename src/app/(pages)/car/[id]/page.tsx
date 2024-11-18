@@ -4,6 +4,7 @@ import Container from "@/app/components/Container"
 import { Car } from "@/app/types"
 import Images from "./images"
 import Title from "./Title"
+import Overview from "./Overview"
 
 type Props = {
     params: { id: string }
@@ -42,6 +43,7 @@ const Page = async ({ params }: Props) => {
                 <BreadCrumb car={data.vehicle} />
                 <Title car={data.vehicle} />
                 <Images url={data.vehicle.imageUrl} />
+                <Overview car={data.vehicle} />
 
             </Container>
 
